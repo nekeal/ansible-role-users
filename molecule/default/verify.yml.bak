@@ -1,0 +1,29 @@
+---
+# This is an example playbook to execute Ansible tests.
+
+- name: Verify
+  hosts: all
+  tasks:
+  - name: "Check deployer authorized keys"
+    file:
+      path: "{{ item }}/.ssh/authorized_keys"
+      state: file
+    register: result
+    failed_when: result.failed or result.changed
+    loop:
+      - /root
+      - /home/app
+      - /home/test1
+
+  - name: Check if keys are added to authorized keys
+    lineinfile:
+      path: "{{ item }}"
+      state: present
+      line: "{{ lookup('file', 'files/ssh/' + 'test1.pub') }}"
+    register: result
+    loop:
+      - /home/app/.ssh/authorized_keys
+      - /root/.ssh/authorized_keys    
+      - /home/test/.ssh/authorized_key
+  - debug:
+      var: result

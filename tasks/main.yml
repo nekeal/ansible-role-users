@@ -1,0 +1,44 @@
+---
+# tasks file for users
+- name: Create groups
+  group:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ users_groups }}"
+
+- name: Create accounts
+  block:
+  - name: Create users
+    user:
+      name: "{{ item.name }}"
+      groups: "{{ item.groups | default([]) }}"
+      shell: "/bin/bash"
+      state: present
+    with_items: "{{ users }}"
+
+  - name: Add selected users to sudo
+    lineinfile:
+      path: "/etc/sudoers.d/{{ item.name }}"
+      line: "{{ item.name }} ALL=(ALL) NOPASSWD: ALL"
+      state: present
+      mode: 0440
+      create: yes
+      validate: 'visudo -cf %s'
+    when: "'sudo' in item.groups | default([])"
+    loop: "{{ users }}"
+
+  - name: Add authorized keys for users
+    authorized_key:
+      user: "{{ item.0.name }}"
+      key: "{{ lookup('file', 'files/ssh/' + item.1 + '.pub') }}"
+    loop: "{{ users | subelements('ssh_keys') }}"
+    tags:
+      - ssh-keys
+  tags:
+    - users
+
+- name: Add authorized keys for root user
+  authorized_key:
+    user: root
+    key: "{{ lookup('file', 'files/ssh/' + item + '.pub') }}"
+  with_items: "{{ users_root_ssh_keys | default([])}}"  

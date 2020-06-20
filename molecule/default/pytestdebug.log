@@ -1,0 +1,459 @@
+versions pytest-5.2.1, py-1.8.1, python-3.8.0.final.0
+cwd=/home/sccad/ansible/multiko/roles/users/molecule/default
+args=['--connection=ansible', '--ansible-inventory=/home/sccad/.cache/molecule/users/default/inventory/ansible_inventory.yml', '-p', 'no:cacheprovider', '--debug', '-n', '4', '/home/sccad/ansible/multiko/roles/users/molecule/default/tests/test_default.py', '-vvv']
+
+  pytest_cmdline_main [hook]
+      config: <_pytest.config.Config object at 0x7f7e044d0c40>
+    pytest_plugin_registered [hook]
+        plugin: <Session default exitstatus='<UNSET>' testsfailed=0 testscollected=0>
+        manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+    finish pytest_plugin_registered --> [] [hook]
+    pytest_configure [hook]
+        config: <_pytest.config.Config object at 0x7f7e044d0c40>
+    early skip of rewriting module: faulthandler [assertion]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x7f7e044d0c40>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/mark/__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/main.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/runner.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/fixtures.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/helpconfig.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/python.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/terminal.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/debugging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/unittest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/capture.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/skipping.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/tmpdir.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/monkeypatch.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/recwarn.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/pastebin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.nose' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/nose.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/assertion/__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/junitxml.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.resultlog' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/resultlog.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/doctest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.freeze_support' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/freeze_support.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/setuponly.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/setupplan.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/warnings.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/logging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.reports' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/reports.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.faulthandler' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/faulthandler.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_forked' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/pytest_forked/__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'xdist.plugin' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/xdist/plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'xdist.looponfail' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/xdist/looponfail.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_sugar' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/pytest_sugar.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'testinfra.plugin' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/testinfra/plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_django.plugin' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/pytest_django/plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <CaptureManager _method='fd' _global_capturing=<MultiCapture out=<FDCapture 1 oldfd=5 _state='suspended'> err=<FDCapture 2 oldfd=6 _state='suspended'> in_=<FDCapture 0 oldfd=3 _state='started'> _state='suspended' _in_suspended='<UNSET>'> _current_item=None>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'tests.conftest' from '/home/sccad/ansible/multiko/roles/users/molecule/default/tests/conftest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session default exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x7f7e04089550>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x7f7e04089640>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+    matched marked file 'xdist.dsession' (from 'xdist') [assertion]
+    find_module called for: xdist.dsession [assertion]
+    found cached rewritten pyc for '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/xdist/dsession.py' [assertion]
+    matched marked file 'xdist.workermanage' (from 'xdist') [assertion]
+    find_module called for: xdist.workermanage [assertion]
+    found cached rewritten pyc for '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/xdist/workermanage.py' [assertion]
+    matched marked file 'xdist.remote' (from 'xdist') [assertion]
+    find_module called for: xdist.remote [assertion]
+    found cached rewritten pyc for '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/xdist/remote.py' [assertion]
+    early skip of rewriting module: execnet.gateway_base [assertion]
+    early skip of rewriting module: execnet.rsync [assertion]
+    early skip of rewriting module: hashlib [assertion]
+    early skip of rewriting module: _hashlib [assertion]
+    early skip of rewriting module: _blake2 [assertion]
+    early skip of rewriting module: _sha3 [assertion]
+    early skip of rewriting module: queue [assertion]
+    early skip of rewriting module: _queue [assertion]
+    early skip of rewriting module: execnet.rsync_remote [assertion]
+    matched marked file 'xdist.scheduler' (from 'xdist') [assertion]
+    find_module called for: xdist.scheduler [assertion]
+    found cached rewritten pyc for '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/xdist/scheduler/__init__.py' [assertion]
+    matched marked file 'xdist.scheduler.each' (from 'xdist') [assertion]
+    find_module called for: xdist.scheduler.each [assertion]
+    found cached rewritten pyc for '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/xdist/scheduler/each.py' [assertion]
+    early skip of rewriting module: py._log [assertion]
+    early skip of rewriting module: py._log.log [assertion]
+    early skip of rewriting module: syslog [assertion]
+    matched marked file 'xdist.report' (from 'xdist') [assertion]
+    find_module called for: xdist.report [assertion]
+    found cached rewritten pyc for '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/xdist/report.py' [assertion]
+    matched marked file 'xdist.scheduler.load' (from 'xdist') [assertion]
+    find_module called for: xdist.scheduler.load [assertion]
+    found cached rewritten pyc for '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/xdist/scheduler/load.py' [assertion]
+    matched marked file 'xdist.scheduler.loadfile' (from 'xdist') [assertion]
+    find_module called for: xdist.scheduler.loadfile [assertion]
+    found cached rewritten pyc for '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/xdist/scheduler/loadfile.py' [assertion]
+    matched marked file 'xdist.scheduler.loadscope' (from 'xdist') [assertion]
+    find_module called for: xdist.scheduler.loadscope [assertion]
+    found cached rewritten pyc for '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/xdist/scheduler/loadscope.py' [assertion]
+    early skip of rewriting module: six.moves [assertion]
+    early skip of rewriting module: six.moves.queue [assertion]
+      pytest_plugin_registered [hook]
+          plugin: <xdist.dsession.TerminalDistReporter object at 0x7f7e04089df0>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <xdist.dsession.DSession object at 0x7f7e04070d90>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+    early skip of rewriting module: distutils [assertion]
+    early skip of rewriting module: distutils.dist [assertion]
+    early skip of rewriting module: distutils.errors [assertion]
+    early skip of rewriting module: distutils.fancy_getopt [assertion]
+    early skip of rewriting module: getopt [assertion]
+    early skip of rewriting module: distutils.util [assertion]
+    early skip of rewriting module: distutils.dep_util [assertion]
+    early skip of rewriting module: distutils.spawn [assertion]
+    early skip of rewriting module: distutils.debug [assertion]
+    early skip of rewriting module: distutils.log [assertion]
+    early skip of rewriting module: distutils.sysconfig [assertion]
+    early skip of rewriting module: distutils.version [assertion]
+      pytest_plugin_registered [hook]
+          plugin: <pytest_sugar.DeferredXdistPlugin object at 0x7f7e03bdc850>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+    finish pytest_configure --> [] [hook]
+    pytest_sessionstart [hook]
+        session: <Session default exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x7f7e044d0c40>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/mark/__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/main.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/runner.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/fixtures.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/helpconfig.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/python.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/terminal.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/debugging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/unittest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/capture.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/skipping.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/tmpdir.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/monkeypatch.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/recwarn.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/pastebin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.nose' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/nose.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/assertion/__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/junitxml.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.resultlog' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/resultlog.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/doctest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.freeze_support' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/freeze_support.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/setuponly.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/setupplan.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/warnings.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/logging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.reports' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/reports.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.faulthandler' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/faulthandler.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_forked' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/pytest_forked/__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'xdist.plugin' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/xdist/plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'xdist.looponfail' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/xdist/looponfail.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_sugar' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/pytest_sugar.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'testinfra.plugin' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/testinfra/plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_django.plugin' from '/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/pytest_django/plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <CaptureManager _method='fd' _global_capturing=<MultiCapture out=<FDCapture 1 oldfd=5 _state='suspended'> err=<FDCapture 2 oldfd=6 _state='suspended'> in_=<FDCapture 0 oldfd=3 _state='started'> _state='suspended' _in_suspended='<UNSET>'> _current_item=None>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'tests.conftest' from '/home/sccad/ansible/multiko/roles/users/molecule/default/tests/conftest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session default exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x7f7e04089550>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x7f7e04089640>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <xdist.dsession.TerminalDistReporter object at 0x7f7e04089df0>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <xdist.dsession.DSession object at 0x7f7e04070d90>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <pytest_sugar.DeferredXdistPlugin object at 0x7f7e03bdc850>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.fixtures.FixtureManager object at 0x7f7e03b95f70>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f7e044b2d00>
+      finish pytest_plugin_registered --> [] [hook]
+    early skip of rewriting module: py._io.capture [assertion]
+    pytest_internalerror [hook]
+        excrepr: Traceback (most recent call last):
+  File "/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/main.py", line 189, in wrap_session
+    config.hook.pytest_sessionstart(session=session)
+  File "/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/pluggy/manager.py", line 337, in traced_hookexec
+    return outcome.get_result()
+  File "/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/pluggy/callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/pluggy/callers.py", line 52, in from_call
+    result = func()
+  File "/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/pluggy/manager.py", line 335, in <lambda>
+    outcome = _Result.from_call(lambda: oldcall(hook, hook_impls, kwargs))
+  File "/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/pluggy/callers.py", line 208, in _multicall
+    return outcome.get_result()
+  File "/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/pluggy/callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/terminal.py", line 552, in pytest_sessionstart
+    self.write_sep("=", "test session starts", bold=True)
+  File "/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/_pytest/terminal.py", line 338, in write_sep
+    self._tw.sep(sep, title, **markup)
+  File "/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/py/_io/terminalwriter.py", line 243, in sep
+    self.line(line, **kw)
+  File "/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/py/_io/terminalwriter.py", line 271, in line
+    self.write(s, **kw)
+  File "/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/py/_io/terminalwriter.py", line 256, in write
+    write_out(self._file, markupmsg)
+  File "/home/sccad/.virtualenvs/multiko/lib/python3.8/site-packages/py/_io/terminalwriter.py", line 421, in write_out
+    fil.flush()
+OSError: [Errno 5] Input/output error
+        excinfo: <ExceptionInfo OSError tblen=17>
+    pytest_unconfigure [hook]
+        config: <_pytest.config.Config object at 0x7f7e044d0c40>
+    finish pytest_unconfigure --> [] [hook]
