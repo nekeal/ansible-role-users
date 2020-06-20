@@ -1,0 +1,23 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include users"
+      include_role:
+        name: "users"
+      vars:
+        users_groups:
+          - docker
+        users:
+          - username: test1
+            groups:
+              - sudo
+              - docker
+            ssh_keys:
+              - test1
+              - test2
+          - username: app
+            ssh_keys:
+              - test2
+        users_root_ssh_keys:
+          - test1
