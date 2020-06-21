@@ -24,8 +24,3 @@ provisioner:
     converge: ${MOLECULE_PLAYBOOK:-converge.yml}
 verifier:
   name: testinfra
-<<<<<<< HEAD
-  options:
-    n: 2
-=======
->>>>>>> c4611fe... Fix
