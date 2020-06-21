@@ -25,4 +25,5 @@ provisioner:
 verifier:
   name: testinfra
   options:
-    n: 2
+    capture: no
+    # n: 2
