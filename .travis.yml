@@ -1,6 +1,6 @@
 ---
 language: python
-python: "2.7"
+python: "3.8"
 
 # Use the new container infrastructure
 sudo: false
@@ -10,6 +10,16 @@ addons:
   apt:
     packages:
     - python-pip
+
+env:
+  global:
+    - ROLE_NAME: users
+  matrix:
+    - MOLECULE_DISTRIBUTION: ubuntu18
+    - MOLECULE_DISTRIBUTION: ubuntu20
+    - MOLECULE_DISTRIBUTION: debian8
+    - MOLECULE_DISTRIBUTION: debian9
+    - MOLECULE_DISTRIBUTION: debian10
 
 install:
   # Install test dependencies.
@@ -22,7 +32,7 @@ install:
 before_script:
   - mv "$PWD" "${PWD%/*}/users"
   # Install ansible
-  - pip install ansible molecule docker
+  - pip install ansible molecule docker testinfra pytest pytest-xdist
 
   # Check ansible version
   - ansible --version
