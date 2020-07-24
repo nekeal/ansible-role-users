@@ -47,11 +47,7 @@
   authorized_key:
     user: root
     key: "{{ lookup('file', 'files/ssh/' + item + '.pub') }}"
-<<<<<<< HEAD
-  with_items: "{{ users_root_ssh_keys | default([])}}"  
-=======
   with_items: "{{ users_root_ssh_keys }}"
   tags:
     - users
     - ssh_keys
->>>>>>> 7c56556... Fix

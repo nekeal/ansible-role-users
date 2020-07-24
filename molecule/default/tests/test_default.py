@@ -35,8 +35,6 @@ def test_ssh_authorized_keys(host, user, ssh_keys, ssh_key_test1, ssh_key_test2)
     ('app', [1]),
 ))
 def test_something(host, user, return_codes):
-    # a = host.ansible('file', "path=/etc/hosts state=absent", user='test1', become=False, check=0)
     with host.sudo(user):
         a = host.run_expect(return_codes,'sudo -n true')
         print(a)
-    # assert False  
