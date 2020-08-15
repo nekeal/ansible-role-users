@@ -13,6 +13,7 @@ Role Variables
 
     users:
       - username: admin
+        shell: /bin/zsh
         groups:
           - sudo
           - docker
@@ -53,5 +54,4 @@ MIT
 
 Author Information
 ------------------
-
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Nekeal
