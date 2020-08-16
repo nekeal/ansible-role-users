@@ -10,6 +10,7 @@
           - docker
         users:
           - username: test1
+            uid: 1100
             groups:
               - sudo
               - docker
