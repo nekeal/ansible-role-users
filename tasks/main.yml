@@ -14,6 +14,7 @@
     name: "{{ item.username }}"
     groups: "{{ item.groups | default([]) }}"
     shell: "{{ item.shell | default(omit) }}"
+    uid: "{{ item.uid | default(omit) }}"
     state: present
   with_items: "{{ users }}"
   tags:

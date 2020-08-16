@@ -14,6 +14,7 @@ Role Variables
     users:
       - username: admin
         shell: /bin/zsh
+        uid: 1100
         groups:
           - sudo
           - docker
