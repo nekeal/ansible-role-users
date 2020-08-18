@@ -17,8 +17,12 @@
     uid: "{{ item.uid | default(omit) }}"
     state: present
   with_items: "{{ users }}"
+  notify: Reset ssh connection
   tags:
     - users
+
+- name: Ensure that updated groups will take effect
+  meta: flush_handlers
 
 - name: Add selected users to sudo
   lineinfile:
